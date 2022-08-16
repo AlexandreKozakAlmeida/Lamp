@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+
+/************************ RESET ******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.active {
+    background-color: #ffffff;
+    transition: .7s;
+}
+
+.disable {
+    background-color: #000;
+    transition: .7s;
+}
+
+/****************** HEADER ************************/
+
+header {
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 2em auto;
+}
+
+/************************* LAMP *************/
+
+#lamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin-top: 7em;
+}
+
+svg {
+    stroke: #000000;
+    stroke-width: 165px;
+    fill: #808080;
+    transition: .7s;
+}
+
+body.active svg {
+    stroke: #000000;
+    stroke-width: 165px;
+    fill: #ffff00;
+    transition: .7s;
+ }
+
+/*********************** BUTTONS **************/
+.buttons {
+    display: flex;
+    gap: 2em;
+}
+
+.buttons button {
+    height: 3em;
+    width: 5em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: .3em;
+}
+
+#on:hover {
+    background-color: #ffff00;
+    transition: .7s;
+    border: 1px solid #ffffff;
+}
+
+#off:hover {
+    background-color: #000;
+    color: #ffffff;
+    transition: .7s;
+    border: 1px solid #ffffff;
+    
+}
+
+
+
+
+
+
